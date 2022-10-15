@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao JavaScript</title>
+</head>
+<body>
+    <h1>Trabalhando com Loops parte 2</h1>
+    <script>
+        const listasDeDestinos = new Array(
+            "Salvador", "São Paulo", "Rio de Janeiro"
+        ); //cria uma lista
+
+        const idadeComprador = 17;
+        const estaAcompanhada = false;
+        let temPassagemComprada = false;
+        const destino = "Curitiba";
+
+        const podeComprar = idadeComprador >= 18 || estaAcompanhada
+
+        console.log("Destinos possíveis:");
+        console.log(listasDeDestinos);
+
+        let destinoExiste = false;
+
+        for(let i = 0; i < 3; i++){
+            if(listasDeDestinos[i] == destino){
+                destinoExiste = true;
+            }
+        }
+        console.log("Destino existe: ", destinoExiste);
+
+        if(podeComprar && destinoExiste){
+            console.log("Boa viagem!");
+        }else{
+            console.log("Desculpe tivemos um erro!");
+        }
+    </script>
+</body>
+</html>

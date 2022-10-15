@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao JavaScript</title>
+</head>
+<body>
+    <h1>Trabalhando com Condicionais parte 2</h1>
+    <script>
+        const listasDeDestinos = new Array(
+            "Salvador", "São Paulo", "Rio de Janeiro"
+        ); //cria uma lista
+
+        const idadeComprador = 17;
+        const estaAcompanhada = true;
+        const temPassagemComprada = true;
+
+        if(idadeComprador >= 18 || estaAcompanhada){ //Maior de idade ou estar acompanhada
+            console.log("Comprador maior de idade ou acompanhado, posso vender!");
+            listasDeDestinos.splice(2,1); //apaga um item da lista
+            //splice(qual a posição que será apagada, quantos itens serão apagados a partir da posição definida)
+        }else{
+            //A pessoa é menor de idade
+            console.log("Não é maior de idade, não posso vender!");
+        }
+
+        console.log("Destinos possíveis:");
+        console.log(listasDeDestinos);
+
+        console.log("Embarque:");
+        if(idadeComprador >= 18 && temPassagemComprada){ //Maior de idade e estar acompanhada
+            console.log("Boa viagem!!");
+        }else{
+            console.log("Não pode embarcar, não comprou passagem!");
+        }
+    </script>
+</body>
+</html>

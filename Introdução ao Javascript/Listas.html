@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao JavaScript</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <script>
+        const listasDeDestinos = new Array(
+            "Salvador", "São Paulo", "Rio de Janeiro"
+        ); //cria uma lista
+
+        listasDeDestinos.push("Curitiba"); //adiciona um item na lista
+
+        console.log("Destinos possíveis:");
+
+        listasDeDestinos.splice(1,1); //apaga um item da lista
+        //splice(qual a posição que será apagada, quantos itens serão apagados a partir da posição definida)
+
+        console.log(listasDeDestinos);
+        console.log(listasDeDestinos[1]); //acessar um item específico da lista
+    </script>
+</body>
+</html>

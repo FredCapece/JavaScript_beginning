@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao JavaScript</title>
+</head>
+<body>
+    <h1>Trabalhando com Variáveis</h1>
+    <script>
+        const Idade = 20;
+        const Nome = "Fred";
+        const Sobrenome = "Capece";
+
+        console.log(`Meu nome é ${Nome} ${Sobrenome}`);
+        //Texto pode ser usado com "" ou ``
+        // Nome = Nome + " " + Sobrenome -> é um erro porque é uma constante
+        //const é uma constante -> siginifica que o valor da variável não pode ser mudado
+
+
+        let idade = 27;
+        let nome = "Kent";
+        let sobrenome = "Springfield";
+        nome = nome + " " + sobrenome;
+
+        console.log(`Meu nome é ${nome}`);
+
+        //nome = nome + " " + sobrenome -> não é mais um erro porque a variavel é um let
+        //let -> o valor da variável pode ser reatribuido infinitamente
+    </script>
+</body>
+</html>
